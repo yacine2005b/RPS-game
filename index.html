@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main class="game">
+      <header class="header">
+        <div class="title">
+          <img src="./images/title.png" alt="" />
+        </div>
+        <div class="score">
+          <p>SCORE</p>
+          <h1>0</h1>
+        </div>
+      </header>
+
+      <div class="hands">
+        <div class="hand paper">
+          <img
+            src="images/Paper.png"
+            alt="paper"
+            onclick="pickUserHand('paper')"
+          />
+        </div>
+        <div class="hand scissor">
+          <img
+            src="images/Scissors.png"
+            alt="scissor"
+            onclick="pickUserHand('scissor')"
+          />
+        </div>
+        <div class="hand rock">
+          <img
+            src="images/Rock.png"
+            alt="rock"
+            onclick="pickUserHand('rock')"
+          />
+        </div>
+      </div>
+      <div class="result">
+        <div class="userhand">
+          <h1>YOU PICKED</h1>
+          <div class="handImg">
+            <img src="/images/Paper.png" id="userPick" class="winner" />
+          </div>
+        </div>
+        <div class="referee">
+          <div class="decision">
+            <h1>YOU WIN</h1>
+          </div>
+          <div class="newGameBtn" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerHand">
+          <h1>THE HOUSE PICKED</h1>
+          <div class="computerImg">
+            <img src="images/Scissors.png" id="computerPick" class="winner" />
+          </div>
+        </div>
+      </div>
+      <div class="rules"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
