@@ -89,3 +89,13 @@ const handleWinnerClass = (userWins) => {
     computerImg.classList.add("winner");
   }
 };
+let rulesBtn = document.getElementById("rulesBtn");
+let rulesContainer = document.getElementById("rulesContainer");
+let CloseBtn = document.getElementById("closeBtn");
+
+rulesBtn.addEventListener("click", () => {
+  rulesContainer.style.display = "block";
+});
+CloseBtn.addEventListener("click", () => {
+  rulesContainer.style.display = "none";
+});

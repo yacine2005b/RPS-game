@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 :root {
-  --background-color: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  --background-color:Radial-Gradient:hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
   --scissors-color: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
   --Paper-color: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
   --Rock-color: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
@@ -14,10 +14,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
   font-family: "Barlow", sans-serif;
   overflow-x: hidden;
+  
+   background: radial-gradient(134.34% 134.34% at 50% 0%,
+    #1F3757 0%,
+    #131537 100%);
 }
 .game {
     display: flex;
@@ -25,9 +30,7 @@ body {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-    background: radial-gradient(134.34% 134.34% at 50% 0%,
-    #1F3757 0%,
-    #131537 100%);
+    
 }
 .header {
   width: 700px;
@@ -94,8 +97,10 @@ body {
   margin-right: 20px;
 }
 .hands .hand {
-  cursor: pointer;
   transition: all 0.25s;
+}
+.hands img {
+  cursor: pointer;
 }
 .hands .hand:hover {
   transform: translate3d(0px, -8px, 0px);
@@ -148,6 +153,42 @@ body {
 .newGameBtn:hover{
   transform: translate3d(0px, -2px, 0px);
   color: red;
+}
+.rules {
+ position: absolute;
+ right: 0px;
+bottom: -10px;
+padding: 10px 26px;
+ margin: 30px 20px;
+border: 0.1rem solid var(--Header-Outline);
+border-radius: 6px;
+color: white;
+cursor: pointer;
+}
+.rulesImg {
+display:none;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 350px;
+padding: 30px;
+background-color: aliceblue;
+justify-items: center;
+border-radius: 20px;
+
+}
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-text);
+  margin-bottom: 20px;
+}
+.Nav img {
+  width: 13px;
+  height: 16px;
+  cursor: pointer;
 }
 
 
