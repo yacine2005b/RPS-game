@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 :root {
-  --background-color:Radial-Gradient:hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
+  --background-color:Radial-Gradient:hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
   --scissors-color: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
   --Paper-color: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
   --Rock-color: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
@@ -19,7 +19,7 @@
 body {
   font-family: "Barlow", sans-serif;
   overflow: hidden;
-  
+  max-height: 100vh;
    background: radial-gradient(134.34% 134.34% at 50% 0%,
     #1F3757 0%,
     #131537 100%);
@@ -191,4 +191,44 @@ border-radius: 20px;
   cursor: pointer;
 }
 
+@media  (max-width :768px) {
+  .header {
+    width: 90%;
+  }
+  .score {
+    width: 30%;
+  }
+  .hands {
+  width: 85%;
+  height: 280px;
+    }
 
+  .hands div img {
+  width: 8rem;
+  height: 110px;
+  }
+  .result {
+    width: 80%;
+    flex-wrap: wrap;
+    
+  }
+  .result img {
+    width: 120px;
+    height: 100px;
+    margin: auto;
+  }
+  .referee .newGameBtn {
+    padding: 12px 20px;
+  }
+  .referee {
+    order: 3;
+  }
+  .rules {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+}

@@ -34,7 +34,7 @@ const referee = (userHand, pcHand) => {
     userWins = true;
   }
   if (userHand == "paper" && pcHand == "paper") {
-    setDecision("It's a tie!");
+    setDecision("NO WINNER!");
   }
   if (userHand == "rock" && pcHand == "scissor") {
     setDecision("YOU WIN!");
@@ -45,10 +45,10 @@ const referee = (userHand, pcHand) => {
     setDecision("YOU LOSE!");
   }
   if (userHand == "rock" && pcHand == "rock") {
-    setDecision("It's a tie!");
+    setDecision("NO WINNER!");
   }
   if (userHand == "scissor" && pcHand == "scissor") {
-    setDecision("It's a tie!");
+    setDecision("NO WINNER!");
   }
   if (userHand == "scissor" && pcHand == "rock") {
     setDecision("YOU LOSE!");
