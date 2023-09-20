@@ -33,7 +33,7 @@ body {
     
 }
 .header {
-  width: 700px;
+  width: 900px;
   height: 150px;
   border-radius: 15px;
   border: 3px solid var(--Header-Outline);
@@ -77,6 +77,7 @@ body {
 }
 .hands {  
   background-image: url(images/triangle.png);
+  
   background-position: center;
   background-repeat: no-repeat;
   width: 476px;
@@ -139,7 +140,7 @@ body {
     align-items: center;
 }
 .referee h1 {
-  font-size: 45px;
+  font-size: 2.8rem;
   color: white;
 }
 .newGameBtn {
@@ -199,7 +200,7 @@ border-radius: 20px;
     width: 30%;
   }
   .hands {
-  width: 85%;
+  
   height: 280px;
     }
 
@@ -210,18 +211,25 @@ border-radius: 20px;
   .result {
     width: 80%;
     flex-wrap: wrap;
+    margin-top: 30px;
     
   }
   .result img {
     width: 120px;
     height: 100px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .referee .newGameBtn {
     padding: 12px 20px;
   }
   .referee {
     order: 3;
+  }
+  .referee h1 {
+    font-size: 2.2rem;
+    color: white;
   }
   .rules {
     bottom: 0;

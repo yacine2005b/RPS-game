@@ -4,6 +4,9 @@ const handOptions = {
   scissor: "./images/Scissors.png",
 };
 let SCORE = 0;
+let rulesBtn = document.getElementById("rulesBtn");
+let rulesContainer = document.getElementById("rulesContainer");
+let CloseBtn = document.getElementById("closeBtn");
 
 const pickUserHand = (Hand) => {
   let hands = document.querySelector(".hands");
@@ -89,9 +92,6 @@ const handleWinnerClass = (userWins) => {
     computerImg.classList.add("winner");
   }
 };
-let rulesBtn = document.getElementById("rulesBtn");
-let rulesContainer = document.getElementById("rulesContainer");
-let CloseBtn = document.getElementById("closeBtn");
 
 rulesBtn.addEventListener("click", () => {
   rulesContainer.style.display = "block";
