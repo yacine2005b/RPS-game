@@ -19,7 +19,7 @@
 body {
   font-family: "Barlow", sans-serif;
   overflow: hidden;
- 
+ max-height: 100vh;
    background: radial-gradient(134.34% 134.34% at 50% 0%,
     #1F3757 0%,
     #131537 100%);
@@ -195,9 +195,15 @@ border-radius: 20px;
 }
 
 @media (max-width:768px) {
+  .game {
+    max-height: 100vh;
+  }
+  .header {
+    margin-top: 10px;
+  }
   .result {
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-bottom: 80px;
   }
   .referee {
     order: 3;
