@@ -204,4 +204,7 @@ border-radius: 20px;
     width: 120px;
     height: 120px;
   }
+  .rules {
+    padding: 10px 20px;
+  }
 }
